@@ -91,11 +91,11 @@
                         <td>{{ $show->address }}</td>
                         <td>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#update">
+                                data-bs-target="#update{{ $show->id }}">
                                 update
                             </button>
                             <!-- Modal -->
-                            <div class="modal fade" id="update" tabindex="-1" aria-labelledby="updateLabel"
+                            <div class="modal fade" id="update{{ $show->id }}" tabindex="-1" aria-labelledby="updateLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
